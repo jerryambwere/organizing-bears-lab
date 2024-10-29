@@ -7,3 +7,42 @@ INSERT INTO bears (id, name, age, sex, color, temperament, alive) VALUES
 (6,"Grinch", 2, "M", "Black", "Grinchy", 1),
 (7,"Wendy", 6, "F", "Blue", "naive", 1),
 (8,null, 20, "M", "black", "aggressive", 0);
+
+
+select_all_female_bears_return_name_and_age = """
+    SELECT
+        bears.name,
+        bears.age
+    FROM bears
+    WHERE sex = 'F';
+"""
+
+select_all_male_bears_return_name_and_age = """
+    SELECT
+        bears.name,
+        bears.age
+    FROM bears
+    WHERE sex = 'M';
+"""
+
+select_all_bears = """
+    SELECT
+        *
+    FROM bears;
+"""
+
+select_bears_older_than_5 = """
+    SELECT
+        bears.name,
+        bears.age
+    FROM bears
+    WHERE age > 5;
+"""
+
+select_bears_with_temperament = """
+    SELECT
+        bears.name,
+        bears.temperament
+    FROM bears
+    WHERE temperament = 'friendly';
+"""

@@ -6,7 +6,7 @@
 - Use SQLite to build relational databases on your computer.
 - Perform CRUD operations on relational databases using SQL.
 
-***
+---
 
 ## Key Vocab
 
@@ -24,7 +24,7 @@
 - **Schema**: a blueprint of the construction of the tables in a database and
   how they relate to one another.
 
-***
+---
 
 ## Lab Structure
 
@@ -82,7 +82,7 @@ tests. You can learn more about in-memory databases
 Next, the test opens the `.sql` file, and runs the SQL code in that file in
 that in-memory database.
 
-***
+---
 
 ## Part 1: `CREATE TABLE`
 
@@ -99,19 +99,19 @@ Your columns should be the following types:
 
 | column      | type    |
 | ----------- | ------- |
-| id          | integer |
-| name        | text    |
-| age         | integer |
-| sex         | text    |
-| color       | text    |
-| temperament | text    |
+| id          | INTEGER |
+| name        | TEXT    |
+| age         | INTEGER |
+| sex         | TEXT    |
+| color       | TEXT    |
+| temperament | TEXT    |
 | alive       | boolean |
 
 Read about [SQLite3 Datatypes](https://www.sqlite.org/datatype3.html) to
 determine what your insert values are going to be. Be sure to pay attention to
 how booleans are expressed in SQLite3.
 
-***
+---
 
 ## Part 2: `INSERT`
 
@@ -128,7 +128,7 @@ about them, but make sex either 'M' or 'F'):
 - Wendy
 - unnamed (refer back to how to create a record that doesn't have one value)
 
-***
+---
 
 ## Part 3: `SELECT`
 
@@ -153,7 +153,7 @@ select_all_female_bears_return_name_and_age = """
 You may be expected to use SQL statements that you're not particularly familiar
 with. Make sure you use the resources and Google to find the right statements.
 
-***
+---
 
 ## Resources
 
